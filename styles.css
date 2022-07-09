@@ -1,0 +1,182 @@
+@font-face {
+  font-family: Roboto;
+  src: url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:wght@400;700;900&display=swap");
+}
+
+/**********************  HEADER *************************/
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header a {
+  color: white;
+  margin-left: 24px;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: white;
+}
+
+header a:visited {
+  color: white;
+}
+
+#header-logo {
+  width: 130px;
+  height: 130px;
+}
+/*********************  HERO SECTION *************************/
+
+.title {
+  font-size: 48px;
+  color: #f9faf8;
+}
+
+.first-p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.signup-button {
+  background-color: #3882f6;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+#hero-section {
+  background-color: #1f2937;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #4133329c;
+  height: 100vh;
+}
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  gap: 200px;
+  color: azure;
+  z-index: 1;
+  padding: 0 200px 0 200px;
+}
+
+.best {
+  width: 550px;
+  height: 300px;
+}
+
+.best::after {
+  background: white;
+}
+
+/**********************  MENU SECTION *************************/
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center;
+  align-content: space-between; */
+  gap: 50px;
+  padding: 0 100px 0 100px;
+  text-align: center;
+}
+
+.menu {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/**********************  QUOTE SECTION *************************/
+
+.quote-section {
+  background-color: #e5e7eb;
+  color: #1f2937;
+  width: 100vw;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.quote {
+  width: 30em;
+  text-align: justify;
+  vertical-align: middle;
+  margin: 0 auto;
+  padding-top: 200px;
+  font-size: 36px;
+}
+
+/**********************  LOGIN SECTION *************************/
+.login-section {
+  background-color: dodgerblue;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: justify;
+  width: 1200px;
+  height: 100px;
+  background-color: dodgerblue;
+  padding: 0 100px 0 100px;
+  color: white;
+  gap: 30px;
+  margin: 0 auto;
+  padding-top: 15px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.login-button {
+  background-color: #3882f6;
+  width: 100px;
+  height: 30px;
+  border: solid white 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+
+/**********************  COPYRIGHT *************************/
+.copyright {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  width: 100vw;
+  height: 50px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
